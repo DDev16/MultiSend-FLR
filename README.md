@@ -13,6 +13,9 @@ Open a terminal in VS Code or your preferred environment and clone the repositor
 
 
 git clone https://github.com/DDev16/MultiSend-FLR.git
+once cloned navigate to the project by typing 
+
+go to open folder and find the MultiSend-FLR app and open it 
 
 2. Add Your Private Key
 Navigate to the .env folder in the project directory.
