@@ -3,13 +3,13 @@ const fs = require("fs");
 
 async function main() {
   // Load recipients and amounts from airdrop_args.json
-  const path = 'C:\\Users\\dever\\billi-airdrop\\airdrop_args.json';
+  const path = 'C:\Users\Michael\Desktop\MultiSend-FLR\airdrop_args.json';
   const data = JSON.parse(fs.readFileSync(path, 'utf8'));
   const recipients = data.recipients;
   const amounts = data.amounts.map(amount => BigInt(amount)); // Convert amounts to BigInt
 
   // Connect to the deployed contract
-  const multisendAddress = "0xFEa673C77204637aeDE29BD1eb6568e2F85d5e2A"; // Replace with your contract address
+  const multisendAddress = "0xc110e0bE9331ba0a8f6E8d93Fe124412F067A00F"; // Replace with your contract address
   const [deployer] = await hre.ethers.getSigners();
   const MultisendContract = await hre.ethers.getContractAt("Multisender", multisendAddress, deployer);
 

@@ -11,32 +11,7 @@ const { PRIVATE_KEY } = process.env;
 module.exports = {
   solidity: {
     compilers: [
-      {
-        version: "0.8.26",
-        settings: {
-          optimizer: {
-            enabled: true,
-            runs: 200,
-          },
-          viaIR: true,
-          outputSelection: {
-            "*": {
-              "*": ["abi", "evm.bytecode", "evm.deployedBytecode", "metadata", "devdoc", "userdoc", "storageLayout" // Ensure storageLayout is included
-              ],
-            },
-          },
-        },
-      },
-      {
-        version: "0.8.21", // For proxy contract verification
-        settings: {
-          optimizer: {
-            enabled: true,
-            runs: 5000,
-          },
-          viaIR: true,
-        },
-      },
+
       {
         version: "0.8.20",
         settings: {

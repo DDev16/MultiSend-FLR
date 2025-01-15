@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = './holders.json'; // Relative path to holders.json
 
 // Define the amount of Ether to multiply by (34.5 Ether in Wei)
-const etherMultiplier = BigInt(34.5 * 10 ** 18);
+const etherMultiplier = BigInt(.1* 10 ** 18);
 
 try {
   // Check if the file exists
